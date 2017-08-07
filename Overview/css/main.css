@@ -11,7 +11,8 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
 }
 #main{
-
+    display: inline-flex;
+    width: 100%;
 }
 .topBar{
     display: inline-flex;
@@ -31,31 +32,50 @@ body{
     padding: 9px;
     width: 75px;
 }
-
+.leftSide{
+    width: 50%;
+    font-size: 25px;
+}
 .questionnaire{
-    padding: 1%;
+    padding: 6%;
+}
+.rightSide{
+    width: 50%;
 }
 .progressBar{
-    display: none;
     padding: 2%;
-    text-align: center;
+    height: 30%;
+}
+.myDisplay {
+    display: none;
 }
 .input{
     display: inline-flex;
     width: 100%;
     margin: 0 auto;
 }
+.checkboxLabels{
+    text-align: left;
+    padding-left: 30%;
+}
 .percentTitle {
     font-size: 30px;
+    text-align: center;
 }
 .collapse {
     display: none;
 
 }
+.circleContainer{
+    padding-top: 10%;
+}
 .card{
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
-    text-align: center;
     background-color: whitesmoke;
     border: solid 1px #e6e6e6;
     font-size: 20px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 180px;
+
 }

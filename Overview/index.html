@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Overview</title>
+
+    <link rel="stylesheet" href="css/circle.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link  href="./css/Backgrounds/brick.jpg">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
+
+    <script type="text/javascript" src="overview.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+</head>
+<body>
+    <div id="Main">
+        <div class="topBar">
+            <div id="pageTitle"> Overview</div>
+
+            <a href="http://lavasurf.com/" class="lavaLink">
+                <img src="http://lavasurf.com/wp-content/themes/lavasurf/images/logo.png">
+            </a>
+        </div>
+
+        <div>
+            <div class="questionnaire">What have you purchased? (see your IO)</div>
+            <div class="input">
+                <label class="questionnaire"  ><input type="checkbox" onclick="myPublish()" > Social Publishing </label>
+                <div id="publishProgress" class="progressBar">
+                    <div id="blueCircle" class="c100 p0">
+                        <span id="bluePercent">0%</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+
+                        <div class="card">
+                            <div class="percentTitle"> Social Publishing </div>
+                                <a href="../Profiles/profiles.html"> Setup Profiles</a>
+                            <div class="cardTitle">To Do</div>
+                           <label> <input id="Blue1"  type="checkbox" onclick="updateBlue('#Blue', '#blueCircle', 'c100 p0', 'c100 p33', 'c100 p66', 'c100 p100', '#bluePercent')" > Create all Facebook Pages</label>
+                            <label> <input id="Blue2" type="checkbox" onclick="updateBlue('#Blue', '#blueCircle', 'c100 p0', 'c100 p33', 'c100 p66', 'c100 p100', '#bluePercent')" > Add Facebook User as the Admin</label>
+                            <label> <input id="Blue3" type="checkbox" onclick="updateBlue('#Blue', '#blueCircle', 'c100 p0', 'c100 p33', 'c100 p66', 'c100 p100', '#bluePercent')" > Enter the User ID</label>
+                        </div></div>
+            </div>
+
+
+            <div class="input" >
+                <label class="questionnaire" ><input type="checkbox" onclick="myReviews()"> Reviews </label>
+                <div id="reviewsProgress"  class="progressBar">
+                    <div  id="greenCircle" class="c100 p0 green">
+                        <span id="GreenPercent">25%</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+
+                        <div class="card">
+                            <div  class="percentTitle"> Reviews </div>
+                                <a href="../Reviews/reviews.html"> Setup Reviews</a>
+                            <div class="cardTitle">To Do</div>
+                            <label> <input id="Green1" type="checkbox" onclick="updateBlue('#Green', '#greenCircle', 'c100 p0 green', 'c100 p33 green', 'c100 p66 green', 'c100 p100 green', '#greenPercent' )" > Create all Facebook Pages</label>
+                            <label> <input id="Green2" type="checkbox" onclick="updateBlue('#Green', '#greenCircle', 'c100 p0 green', 'c100 p33 green', 'c100 p66 green', 'c100 p100 green', '#greenPercent' )" > Add Facebook User as the Admin</label>
+                            <label> <input  id="Green3" type="checkbox" onclick="updateBlue('#Green', '#greenCircle', 'c100 p0 green', 'c100 p33 green', 'c100 p66 green', 'c100 p100 green', '#greenPercent' )" > Enter the User ID</label>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="input">
+                <label class="questionnaire" ><input type="checkbox" onclick="myBoosting()"> Boosting </label>
+                <div id="boostingProgress" class="progressBar">
+                    <div id="orangeCircle" class="c100 p0 orange">
+                        <span id="orangePercent">75%</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+
+                        <div class="card">
+                            <div class="percentTitle"> Boosting  </div>
+                                <a href="../Boosting/boosting.html"> Setup Boosting</a>
+                            <div class="cardTitle">To Do</div>
+                            <label> <input  id="orange1" type="checkbox" onclick="updateBlue( '#orange', '#orangeCircle', 'c100 p0 orange', 'c100 p33 orange', 'c100 p66 orange', 'c100 p100 orange', '#orangePercent')" > Create all Facebook Pages</label>
+                            <label> <input id="orange2" type="checkbox" onclick="updateBlue('#orange', '#orangeCircle', 'c100 p0 orange', 'c100 p33 orange', 'c100 p66 orange', 'c100 p100 orange', '#orangePercent' )" > Add Facebook User as the Admin</label>
+                            <label> <input id="orange3" type="checkbox" onclick="updateBlue('#orange', '#orangeCircle', 'c100 p0 orange', 'c100 p33 orange', 'c100 p66 orange', 'c100 p100 orange', '#orangePercent')" > Enter the User ID</label>
+                    </div></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+</html>
+
+
+<!--<a href="#publishCollapse" data-toggle="collapse"><i   class="material-icons">keyboard_arrow_down</i></a></div>-->
+<!--<div id="publishCollapse" class="collapse"> This should be a collapsable-->
+
+<!--<a href="#reviewCollapse" data-toggle="collapse"><i   class="material-icons">keyboard_arrow_down</i></a> </div>-->
+<!--<div id="reviewCollapse" class="collapse"> This should be a collapsable In adddition with the other one-->
+
+<!--<a href="#boostingCollapse" data-toggle="collapse"><i  class="material-icons">keyboard_arrow_down</i></a></div>-->
+<!--<div id="boostingCollapse" class="collapse"> This is just for testing, i really want this to work-->
+
+<!--<i class="material-icons">keyboard_arrow_up</i>-->
